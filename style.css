@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+#banner{
+    background: url(images/Did you know_.jpeg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+
+
+
+
+}
+
