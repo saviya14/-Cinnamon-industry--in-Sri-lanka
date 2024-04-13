@@ -1,42 +1,108 @@
+
+/* Original CSS styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
 }
-.header, .footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 20px;
-}
-.nav {
-    margin: 10px 0;
-    text-align: center;
-}
-.nav a {
-    margin: 0 15px;
-    text-decoration: none;
-}
-.hero {
-    background-image: url('cinnamon.jpg'); /* Add your image URL here */
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: white;
-}
-.section {
-    margin: 20px 0;
-    padding: 20px;
-}
-.contact form {
+
+.menu-area {
+    position: fixed;
     display: flex;
-    flex-direction: column;
-}
-.contact form input, .contact form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(224, 228, 231, 0.2);
     width: 100%;
+    height: 70px;
+    z-index: 2; /* Ensure navigation bar is above slideshow */
 }
-.contact form button {
-    padding: 10px 20px;
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
 }
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#home {
+    position: relative;
+    z-index: 1; /* Ensure slideshow is behind navigation bar */
+}
+#History,
+#CinnamonVarieties,
+#CultivationPractices,
+#Benefits,
+#about {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Slideshow styles (No changes) */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.slides:nth-child(1) {
+    opacity: 1;
+    animation: fade 10s infinite;
+}
+
+.slides:nth-child(2) {
+    animation: fade 10s infinite 5s;
+}
+
+.slides:nth-child(3) {
+    animation: fade 10s infinite 10s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Content styles (No changes) */
+#home .content {
+    position: absolute;
+    top: 50%;
+    left: 50
