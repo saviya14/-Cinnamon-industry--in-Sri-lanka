@@ -1,5 +1,4 @@
 
-/* Original CSS styles */
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: montserrat;
+    border: 5px solid #eee; /* Added border to the entire webpage */
 }
 
 .menu-area {
@@ -28,6 +28,7 @@ body {
     justify-content: right;
     list-style: none;
     margin-right: 15%;
+    font-weight: bold;
 }
 
 .logo {
@@ -46,63 +47,120 @@ a {
     text-transform: uppercase;
 }
 
-#home {
-    position: relative;
-    z-index: 1; /* Ensure slideshow is behind navigation bar */
-}
+#home,
 #History,
 #CinnamonVarieties,
 #CultivationPractices,
 #Benefits,
-#about {
+#about,
+#Contact {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    font-size: 18px; /* Upgraded font size */
 }
 
-/* Slideshow styles (No changes) */
-.slideshow {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+#home{
+    
+    background-image: url(updated.jpeg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
 }
 
-.slides {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 1s ease-in-out;
+.history-img1{
+    
+    margin: 50px;
+    width: 200px;
+    height: 300px;
+}
+.history-img2{
+    
+    margin: 50px;
+    width: 500px;
+    height: 300px;
+}
+.history-img3{
+    
+    margin: 50px;
+    width: 500px;
+    height: 300px;
 }
 
-.slides:nth-child(1) {
-    opacity: 1;
-    animation: fade 10s infinite;
+.con1{
+    display: flex;
+    justify-content: center;
 }
 
-.slides:nth-child(2) {
-    animation: fade 10s infinite 5s;
+.con2{
+    display: flex;
+    justify-content: center;
 }
 
-.slides:nth-child(3) {
-    animation: fade 10s infinite 10s;
+.con3{
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
+.varieties-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
 }
 
-/* Content styles (No changes) */
-#home .content {
-    position: absolute;
-    top: 50%;
-    left: 50
+.cultivation-img1{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+.cultivation-img2{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+
+.benefits-img1{
+    
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+.benefits-img2{
+    
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+
+.header{
+    font-size: 100px;
+    
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    padding-left: 70px;
+}
+
+.vid{
+    margin: 50px;
+}
+
+.video2{
+    display: flex;
+    justify-content: center;
+}
+
