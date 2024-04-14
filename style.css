@@ -8,6 +8,7 @@ body {
     padding: 0;
     font-family: montserrat;
     border: 5px solid #eee; /* Added border to the entire webpage */
+    background-color: #b9e8a7;
 }
 
 .menu-area {
@@ -21,6 +22,8 @@ body {
     width: 100%;
     height: 70px;
     z-index: 2; /* Ensure navigation bar is above slideshow */
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
 .nav {
@@ -29,6 +32,7 @@ body {
     list-style: none;
     margin-right: 15%;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .logo {
@@ -68,13 +72,14 @@ a {
 
 #home{
     
-    background-image: url(updated.jpeg);
+    background-image: url(img1.jpg);
 	width: 100%;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	text-align: center;
+    animation: change 30s infinite ease-in-out;
 }
 
 .history-img1{
@@ -88,12 +93,14 @@ a {
     margin: 50px;
     width: 500px;
     height: 300px;
+    margin-bottom: 0;
 }
 .history-img3{
     
     margin: 50px;
     width: 500px;
     height: 300px;
+    margin-bottom: 0;
 }
 
 .con1{
@@ -110,6 +117,17 @@ a {
     display: flex;
     justify-content: center;
 }
+.con4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.con5{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 
 .varieties-img{
     display: block;
@@ -123,11 +141,13 @@ a {
     width: 500px;
     height: 300px;
     margin: 50px;
+    margin-bottom: 0;
 }
 .cultivation-img2{
     width: 500px;
     height: 300px;
     margin: 50px;
+    margin-bottom: 0
 }
 
 .benefits-img1{
@@ -142,6 +162,57 @@ a {
     height: 300px;
     margin: 50px;
 }
+
+.about-img1{
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+.about-img2{
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+.about-img3{
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.about-img4{
+    width: 300px;
+    height: 175px;
+    margin: 2px;
+    margin-bottom: 0;
+}
+.about-img5{
+    width: 300px;
+    height: 175px;
+    margin: 2px;
+    margin-bottom: 0;
+}
+.about-img6{
+    width: 300px;
+    height: 175px;
+    margin: 2px;
+    margin-bottom: 0;
+}
+.about-img7{
+    width: 300px;
+    height: 175px;
+    margin: 2px;
+    margin-bottom: 0;
+}
+
+.wagaimg{
+    width: 400px;
+    height: 250px;
+}
+
+
 
 .header{
     font-size: 100px;
@@ -164,3 +235,36 @@ a {
     justify-content: center;
 }
 
+.hed{
+    font-size: 70px;
+    background-color: black;
+    color: white;
+    
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(img1.jpg);
+    }
+    20%
+    {
+        background-image: url(img2.jpg);
+    }
+    40%
+    {
+        background-image: url(img3.jpg);
+    }
+    60%
+    {
+        background-image: url(img4.jpg);
+    }
+    80%
+    {
+        background-image: url(img5.jpg);
+    }
+    100%
+    {
+        background-image: url(img6.jpg);
+    }
+}
