@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ඔබේ අදහස් යොමුකරන්න</title>
+    <link rel="stylesheet" href="./form.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <div class="menu-area">
+      <a href="./main.html" class="logo">ලංකා කුරුඳු</a>
+      <ul class="nav">
+        <li><a href="./main.html">කුරුදු ඉතිහාසය</a></li>
+        <li><a href="./main.html">කුරුඳු ප්‍රභේද</a></li>
+        <li><a href="./kurunduWagawa.html">කුරුදු වගා කිරීම</a></li>
+        <li><a href="./oushadiyaGunaya.html">ඖෂධීය ගුණය</a></li>
+        <li><a href="./nishpadana.html">නිශ්පාදන</a></li>
+      </ul>
+    </div>
+  </head>
+
+  <body>
+    <div class="container1">
+      <h1 style="margin-top: 100px">ඔබේ අදහස් යොමුකරන්න</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">ඔබේ නම:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">විද්‍යුත් ලිපිනය:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="correct"
+            >ඔබට අපගේ වෙබ් පිටුවේ ඇති තොරතුරු වලින් ප්‍රයෝජනයක් ලැබුනේද ?</label
+          >
+          <div class="radio-group">
+            <input type="radio" id="yes" name="correct" value="yes" required />
+            <label for="yes">ඔව්</label>
+            <input type="radio" id="no" name="correct" value="no" />
+            <label for="no">නැත</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="issues">ලැබූනේනම් ඒ පිලිබදව කෙටි සටහනක්:</label>
+          <textarea id="issues" name="issues"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="questions"
+            >මෙම වෙබ් පිටුවේ ඔබ දකින දෝශ සහ ඇතුලත් විය යුතු දෑ සදහා ඔබගේ
+            නිර්දේශ?:</label
+          >
+          <textarea id="questions" name="questions"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="questions" දෝශ සහ ඇතුලත් විය යුතු දෑ සදහා ඔබගේ නිර්දේශ?
+            >දෝශ සහ ඇතුලත් විය යුතු දෑ සදහා ඔබගේ නිර්දේශ?:</label
+          >
+          <textarea id="questions" name="questions"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="questions" දෝශ සහ ඇතුලත් විය යුතු දෑ සදහා ඔබගේ නිර්දේශ?
+            >ඔබට මෙහි කරුණු සම්බන්ධයෙන් වැඩිදුර තොරතුරු අවශ්‍ය ද? අවශ්‍යනම් ඒ
+            පිලිබදව විස්තරයක් සදහන් කරන්න:</label
+          >
+          <textarea id="questions" name="questions"></textarea>
+        </div>
+        <button type="submit">යවන්න</button>
+      </form>
+    </div>
+    <!-- footer  -->
+
+    <div class="footer">
+      CONTACT US <br />
+      P.S.K.S.Dharmaratne <br />
+      BSc Undergraduate in Applied Sciences, Rajarata University Of Sri Lanka.
+      <br />
+      532 A Siriwardhana Niwesa Polpitimukalana, kandana.<br />
+      +94 317 431 431<br />
+      savindudharmarathna111@gmail.com<br />
+      <button onclick="navigateToAnotherPage()" class="feedback">
+        ඔබේ අදහස් යොමුකරන්න
+      </button>
+    </div>
+  </body>
+</html>
+
+<script>
+  function navigateToAnotherPage() {
+    window.location.href = "form.html";
+  }
+</script>
